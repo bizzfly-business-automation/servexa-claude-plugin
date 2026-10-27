@@ -1,0 +1,6 @@
+{
+  "pluginVersion": "0.1.0",
+  "bundle": "servexa-mcp.mjs",
+  "sha256": "4939e110a592793d99b59e4013d688b5fe4433e0fa3b21ead236d1ccb27e74c0",
+  "node": ">=20"
+}

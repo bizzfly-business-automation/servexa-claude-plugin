@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "servexa": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/servexa-mcp.mjs"],
+      "env": {
+        "SERVEXA_BASE_URL": "${SERVEXA_BASE_URL:-}",
+        "SERVEXA_GUIDE_TOKEN": "${SERVEXA_GUIDE_TOKEN:-}",
+        "SERVEXA_API_KEY": "${SERVEXA_API_KEY:-}"
+      }
+    }
+  }
+}

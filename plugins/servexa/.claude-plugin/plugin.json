@@ -1,0 +1,7 @@
+{
+  "name": "servexa",
+  "version": "0.1.0",
+  "description": "Connect an application to Servexa (support tickets, feature suggestions, pre-login issue reporting, chat) and keep it current. Commands: /servexa:setup, /servexa:update, /servexa:status. Reads the live integration contract of your Servexa deployment through a bundled MCP server; no Markdown guide to share.",
+  "author": { "name": "Servexa maintainers" },
+  "keywords": ["servexa", "integration", "support", "mcp"]
+}

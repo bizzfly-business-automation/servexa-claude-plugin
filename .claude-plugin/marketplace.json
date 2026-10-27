@@ -1,0 +1,16 @@
+{
+  "name": "servexa",
+  "owner": { "name": "Servexa maintainers" },
+  "metadata": {
+    "description": "Marketplace for the Servexa integration plugin. Install it with /plugin marketplace add <owner>/<repo>, then /plugin install servexa@servexa."
+  },
+  "plugins": [
+    {
+      "name": "servexa",
+      "source": "./plugins/servexa",
+      "description": "Connect any application to Servexa and keep the integration current: /servexa:setup and /servexa:update, backed by an MCP server that reads the live contract of your Servexa deployment.",
+      "version": "0.1.0",
+      "category": "integration"
+    }
+  ]
+}

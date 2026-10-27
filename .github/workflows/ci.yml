@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  mcp:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mcp-src
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: mcp-src/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      # Fails when plugins/servexa/mcp/servexa-mcp.mjs or RELEASE.json differ from a fresh build of mcp-src/src.
+      - run: npm run check

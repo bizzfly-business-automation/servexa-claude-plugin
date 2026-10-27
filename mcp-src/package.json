@@ -1,0 +1,21 @@
+{
+  "name": "servexa-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Servexa integration MCP server. Source of the single file bundled into plugins/servexa/mcp/servexa-mcp.mjs; not published to a registry.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test \"test/*.test.ts\"",
+    "typecheck": "tsc -p tsconfig.json",
+    "build": "node scripts/bundle.mjs",
+    "check": "node scripts/bundle.mjs --check"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.8.0"
+  }
+}
